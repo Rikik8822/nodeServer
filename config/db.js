@@ -1,7 +1,7 @@
 import { connect } from "mongoose";
 export const connectToDb = async (req, res) => {
     try {
-        let con = await connect(process.env.DB_URL{
+        let con = await connect(process.env.DB_URL,{
         useNewUrlParser: true,
         useUnifiedTopology: true,
         serverSelectionTimeoutMS: 30000})
